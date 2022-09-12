@@ -7,7 +7,7 @@
       "name": "req",
       "methods": [
         "post"
-      ],
+      ]
     },
     {
       "type": "http",
