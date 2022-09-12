@@ -16,7 +16,7 @@
 		{
 			"type": "shell",
 			"label": "npm prune (functions)",
-			"command": "npm prune --production",
+			"command": "npm install prune --production",
 			"problemMatcher": []
 		}
 	]
