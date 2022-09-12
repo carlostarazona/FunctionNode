@@ -18,7 +18,7 @@ const scrapper = async ({dni, birthDate, emissionDate}) => {
     }));
     
     const browser = await puppeteer.launch({
-        headless: false, 
+        headless: true, 
         devtools: true,
         /*
         args: [                
@@ -59,7 +59,9 @@ const scrapper = async ({dni, birthDate, emissionDate}) => {
             button.click();
         }),
     ]);
+    console.log(response);
     const response2 = await page.waitForResponse(response => response.url().includes('history'));
+    console.log(response2);
     const citizenData = await response2.json();
     console.log(citizenData);
     await browser.close();

@@ -1,4 +1,4 @@
-const { scrapper } = require("../scrapper");
+const { scrapper } = require("./scrapper");
 
 module.exports = async function (context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
